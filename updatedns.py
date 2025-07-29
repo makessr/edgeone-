@@ -155,6 +155,7 @@ def update_dns_records(ips):
         print(f'批量更新DNS记录失败: {str(e)}')
         return False
 
+
 def main():
     # 获取脚本所在目录
     script_dir = os.path.dirname(os.path.abspath(__file__))

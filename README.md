@@ -2,7 +2,7 @@
 采用py形式进行优选ip服务，利用华为云国际版进行域名解析功能。
 以下是一些常见问题与解决方法：
 ```shell
-Traceback (most recent call last):  File "/opt/1panel/apps/openresty/openresty/www/sites/www.yatu.icu/index/updatedns.py", line 3, in <module>    from huaweicloudsdkcore.auth.credentials import BasicCredentials ModuleNotFoundError: No module named 'huaweicloudsdkcore'
+Traceback (most recent call last):  File "/opt/1panel/apps/openresty/openresty/www/sites/updatedns.py", line 3, in <module>    from huaweicloudsdkcore.auth.credentials import BasicCredentials ModuleNotFoundError: No module named 'huaweicloudsdkcore'
 ```
 
 报错 `ModuleNotFoundError: No module named 'huaweicloudsdkcore'` 说明 Python 环境中缺少华为云 SDK 的核心模块，需要安装对应的依赖包。以下是具体解决步骤：
@@ -77,7 +77,7 @@ note: If you believe this is a mistake, please contact your Python installation 
 sudo apt install python3-venv  # Debian/Ubuntu 系统
 
 # 2. 进入项目目录（例如你的脚本所在目录）
-cd /opt/1panel/apps/openresty/openresty/www/sites/www.yatu.icu/index/
+cd /opt/1panel/apps/openresty/openresty/www/sites/
 
 # 3. 创建虚拟环境（会生成一个 venv 文件夹）
 python3 -m venv venv
