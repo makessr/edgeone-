@@ -1,5 +1,6 @@
 # edgeone-优选
 采用py形式进行优选ip服务，利用华为云国际版进行域名解析功能。
+如何获取edgeone的ip列表，请访问：https://api.edgeone.ai/ips
 以下是一些常见问题与解决方法：
 ```shell
 Traceback (most recent call last):  File "/opt/1panel/apps/openresty/openresty/www/sites/updatedns.py", line 3, in <module>    from huaweicloudsdkcore.auth.credentials import BasicCredentials ModuleNotFoundError: No module named 'huaweicloudsdkcore'
